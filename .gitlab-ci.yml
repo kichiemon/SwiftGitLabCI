@@ -1,0 +1,6 @@
+image: swift:latest
+
+build:
+  stage: build
+  script: "echo 'success'"
+
