@@ -3,6 +3,4 @@ image: swift:latest
 build:
   stage: build
   script: 
-    - "echo 'success'"
-    - "pwd"
-    - "ls -la"
+    - "swift test"
