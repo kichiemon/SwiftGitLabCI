@@ -2,5 +2,8 @@ image: swift:latest
 
 build:
   stage: build
-  script: "echo 'success'"
-
+  script: 
+    - "echo 'success'"
+    - "pwd"
+    - "ls -la"
+    - "docker run -v $(pwd):/SwiftGitLabCI -it --rm --name swiftfun swift /bin/bash"
