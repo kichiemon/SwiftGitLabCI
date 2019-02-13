@@ -6,4 +6,3 @@ build:
     - "echo 'success'"
     - "pwd"
     - "ls -la"
-    - "docker run -v $(pwd):/SwiftGitLabCI -it --rm --name swiftfun swift /bin/bash"
