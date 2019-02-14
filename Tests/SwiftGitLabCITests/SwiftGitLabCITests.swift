@@ -18,6 +18,6 @@ final class SwiftGitLabCITests: XCTestCase {
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testExample", testExample, testFailureExample),
     ]
 }
