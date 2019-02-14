@@ -2,7 +2,7 @@ import XCTest
 
 extension SwiftGitLabCITests {
     static let __allTests = [
-        ("testExample", testExample),
+        ("testExample", testExample, testFailureExample),
     ]
 }
 
