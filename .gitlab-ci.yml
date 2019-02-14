@@ -1,6 +1,10 @@
-image: swift:latest
+image: kichiemon/swift-ci:latest
 
 build:
   stage: build
   script: 
-    - "swift test"
+    - "swift test 2>&1 | xcpretty --color --report junit"
+  artifacts:
+    expire_in: 1 week
+    reports:
+      junit: build/reports/junit.xml
